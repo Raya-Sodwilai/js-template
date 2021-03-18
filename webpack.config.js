@@ -1,23 +1,14 @@
-const path = require('path');
+const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/main.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  devtool: 'eval-source-map',  
-  devServer: {                 
-    contentBase: './dist'      
-  },
+  mode: 'production',
+  devtool: 'source-map',  
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
-      template: './src/index.html',
-      inject: 'body'
+      template: './src/index.html'
     })
   ],
   module: {
@@ -35,5 +26,12 @@ module.exports = {
         loader: "eslint-loader"
       }
     ]
+  },
+  devServer: {    
+    port: 7777,             
+    contentBase: [
+      resolve(__dirname, './dist')      
+    ],
+    historyApiFallback: true
   }
 };

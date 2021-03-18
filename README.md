@@ -1,14 +1,17 @@
-# (Shape Tracker)
+# (Application Name)
 
-#### By (Raya Sodwilai)
+#### (Brief Description of Application)
+
+#### By (Your Name Here)
 
 ## Technologies Used
 
-* _JavaScript_
-* _HTML_
-* _CSS_
+* _List all_
+* _the major technologies_
+* _you used in your project_
+* _here_
 
-## Shape Tracker application was created to determine weather three lengths will make a triangle and calculate the area of a rectangle.
+## Description
 
 ## Setup/Installation Requirements
 
@@ -20,13 +23,9 @@
 
 ## Known Bugs
 
-* _N/A_
+* _Any known issues_
+* _should go here_
 
 ## License
-_MIT_
-
-_Copyright (c) 2021 Raya Sodwilai_
-
 
 ## Contact Information
-_sodwilai@pdx.edu_
